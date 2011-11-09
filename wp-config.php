@@ -79,7 +79,14 @@ define('WPLANG', '');
  * in their development environments.
  */
 define('WP_DEBUG', false);
-
+define('WP_ALLOW_MULTISITE', true);
+define( 'MULTISITE', true );
+define( 'SUBDOMAIN_INSTALL', false );
+$base = '/studentlife_blog/';
+define( 'DOMAIN_CURRENT_SITE', 'hulk.imu.uiowa.edu' );
+define( 'PATH_CURRENT_SITE', '/studentlife_blog/' );
+define( 'SITE_ID_CURRENT_SITE', 1 );
+define( 'BLOG_ID_CURRENT_SITE', 1 );
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
@@ -88,4 +95,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-
