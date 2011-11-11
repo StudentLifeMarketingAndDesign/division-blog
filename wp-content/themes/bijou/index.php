@@ -25,14 +25,13 @@ get_header();
 
 			
 	<div id="filmfeature">
-
 	<ul>
 			<?php
 				$dataQuery = new WP_Query( array(
 					'post_type' => 'post',
 					'posts_per_page' => 5, // get 5 posts
 					 'paged' => get_query_var( 'paged' ), 
-					'orderby_field' => 'film_start_date', // name of field
+				//	'orderby_field' => 'film_start_date', // name of field
 					'orderby_type' => 'string', // 'int' or 'string' (defaults to 'string')
 					'order'	=>	'ASC'
 				));
