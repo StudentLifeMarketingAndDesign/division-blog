@@ -10,7 +10,6 @@
  * @since Twenty Ten 1.0
  */
 ?>
-	</div><!-- #main -->
 
 	<div id="footer">
 		<div id="footer_content">
@@ -40,8 +39,6 @@
 
 		</div><!-- #footer_content -->
 	</div><!-- #footer -->
-
-</div><!-- #wrapper -->
 
 <?php
 	/* Always have wp_footer() just before the closing </body>

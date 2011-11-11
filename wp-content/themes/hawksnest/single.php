@@ -8,8 +8,6 @@
  */
 
 get_header(); ?>
-
-		<div class="wrapper">
 			<div class="main">
 
 				<div id="content">
@@ -24,13 +22,9 @@ get_header(); ?>
 			get_template_part( 'loop', 'single' );
 			?>
 					</div><!-- #meat -->
-
-         			<div id="sidebar">
 <?php get_sidebar(); ?>
-					</div><!-- #sidebar -->
 				</div><!-- #content -->
-			</div><!-- #wrapper -->
-		</div><!-- #main -->
-
-<?php get_sidebar(); ?>
+			</div><!-- #main -->
+		<div style="clear:both;"></div>
+		</div><!-- #wrapper -->
 <?php get_footer(); ?>

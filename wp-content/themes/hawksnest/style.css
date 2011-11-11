@@ -16,9 +16,8 @@ Version: 0
 
 
 body {
-	background-color:#000;
+	background-color:#171717;
 	color:#FFF;
-	background-image:url('images/stripe.gif');
 	background-repeat:repeat;
 	margin:0px;
 	padding:0px;
@@ -41,13 +40,21 @@ list-style: none;
 padding: 0px;
 }
 
+li {
+list-style: none;
+padding: 0px;
+}
+
 .wrapper {
-	margin:0 auto;
-	width:900px;
-	margin-top:5px;
+	padding-top:5px;
+	background-image:url('images/stripe.gif');
+	display: block;
+	height:100%;
+	padding-bottom: 25px;
 }
 .main{
-	float:left;
+	margin:0 auto;
+	width:900px;
 }
 
 /* Header and Nav */
@@ -150,51 +157,75 @@ padding: 0px;
 	margin:0 auto;
 	text-align: center;
 }
-#archive_label{
-	background-image: url('images/archives.png');
-	width:172px;
-	height:26px;
-	margin:0 auto;
-	margin-top:10px;
-	margin-bottom: 10px;
-}
 #upcoming_events_label{
 	background-image: url('images/upcomingevents.png');
 	width: 208px;
 	height: 48px;
 	margin:0 auto;
 	margin-top:10px;
-	margin-bottom: 10px;
-}			
+	margin-bottom: 20px;
+	
+}
+#archive_label{
+	background-image: url('images/archives.png');
+	width:172px;
+	height:26px;
+	margin:0 auto;
+	margin-top:30px;
+	margin-bottom: 20px;
+}
 #facebook_label{
 	background-image: url('images/facebook.png');
 	width:246px;
 	height:45px;
 	margin:0 auto;
-	margin-top:10px;
-	margin-bottom: 10px;
+	margin-top:30px;
+	margin-bottom: 20px;
 }
 #twitter_label{
 	background-image: url('images/twitter.png');
 	width:165px;
 	height:26px;
 	margin:0 auto;
-	margin-top:10px;
+	margin-top:30px;
+	margin-bottom: 20px;
+}
+.event h3{
+	font-size: 14px;
+}
+.event_name {
+	margin:0;
+	padding: 0;
+}
+.event_date {
+	font-size: 10px;
+}
+.event_date a {
+	visibility: hidden;
+}
+li.event{
+	text-align: left;
+	margin-bottom: 5px;
+}
+ul.twitter{
+	text-align: left;
+	font-size: 10px;
+}
+li.twitter-item{
 	margin-bottom: 10px;
 }
 
 /* Footer */
 
 #footer {
-	width:100%;
-	background-color:#171717;
-	margin-top:25px;
 	float:left;
 	border-top-style:solid;
 	border-top-width:5px;
 	border-top-color:#ffd41f;
 	clear:both;
-	height: 100%;
+	min-height: 87px;
+	width:100%;
+	padding-bottom: 5px;
 }
 #footer_content {
 	font-family:Verdana, Geneva, sans-serif;
@@ -231,4 +262,21 @@ padding: 0px;
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 10px;
+}
+#featured{
+	background-color:#303030;
+}
+#featured_post{
+	padding: 10px;
+}
+#featured_post h2{
+	margin-top: 0;
+	color: #fff;
+}
+#featured_post p {
+	font-size: 10px;
+}
+h2 a:hover{
+	color: #fff9ab;
+	text-decoration: none;
 }

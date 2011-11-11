@@ -9,7 +9,7 @@ while ( have_posts() ) : the_post();?>
 	</a>
 </h2>
 	<div class="entry-content">
-				<?php the_content('Read more...');?>
+				<?php the_excerpt();?>
 				
 	</div><!-- .entry-content -->
 <?php

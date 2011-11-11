@@ -8,8 +8,6 @@
  */
 
 get_header(); ?>
-
-		<div class="wrapper">
 			<div class="main">
 
 				<div id="content">
@@ -63,8 +61,9 @@ if ( get_the_author_meta( 'description' ) ) : ?>
 <?php get_sidebar(); ?>
 					</div><!-- #sidebar -->
 				</div><!-- #content -->
-			</div><!-- #wrapper -->
 		</div><!-- #main -->
+		<div style="clear:both;"></div>
+		</div><!-- #wrapper -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

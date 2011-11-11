@@ -8,19 +8,24 @@
  */
 ?>
 
+         			<div id="sidebar">
+						<div id="sidebar_stuff">
+
 				<div id="upcoming_events_label"></div>
 				
 <?php
 
 // The Query
-query_posts(array('category_name' => 'event', 'posts_per_page' => 10 ));
+query_posts('showposts=5&category_name=event&meta_key=date&meta_compare=>=&meta_value=' . $todaysDate . '&orderby=meta_value&order=ASC');
 
 // The Loop
 while ( have_posts() ) : the_post();
-	echo '<li>';
-	the_title();
-	echo '</li>';
-endwhile;
+	?>
+	<li class="event">
+	<h3 class="event_name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+	<div class="event_date"><?php the_excerpt(); ?></div>
+	</li>
+<?php endwhile;
 
 // Reset Query
 wp_reset_query();
@@ -32,6 +37,9 @@ wp_reset_query();
 				<div class="fb-like-box" data-href="http://www.facebook.com/iowahawksnest" data-width="292" data-colorscheme="dark" data-show-faces="true" data-border-color="#303030" data-stream="false" data-header="false"></div>
 				
 				<div id="twitter_label"></div>
+				
+				<?php include 'twitter.php';
+				twitter_messages("iowahawksnest"); ?>
 
 				<div id="archive_label"></div>
 				<ul>
@@ -51,3 +59,5 @@ wp_reset_query();
 		</div><!-- #secondary .widget-area -->
 
 <?php endif; ?>
+						</div><!#-- sidebar_stuff -->
+					</div><!-- #sidebar -->

@@ -8,8 +8,6 @@
  */
 
 get_header(); ?>
-
-		<div class="wrapper">
 			<div class="main">
 
 				<div id="content">
@@ -36,8 +34,9 @@ get_header(); ?>
 <?php get_sidebar(); ?>
 					</div><!-- #sidebar -->
 				</div><!-- #content -->
-			</div><!-- #wrapper -->
 		</div><!-- #main -->
 
 <?php get_sidebar(); ?>
+		<div style="clear:both;"></div>
+		</div><!-- #wrapper -->
 <?php get_footer(); ?>
