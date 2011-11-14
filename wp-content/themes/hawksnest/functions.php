@@ -2,6 +2,9 @@
 
 add_theme_support( 'menus' );
 
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 80, 80 ); // 50 pixels wide by 50 pixels tall, box resize mode
+
 // Add Read More link to manual excerpts.
 add_action('the_excerpt', 'child_add_manual_read_more', 20);
 function child_add_manual_read_more($excerpt) {
