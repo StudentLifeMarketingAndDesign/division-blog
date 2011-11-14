@@ -15,6 +15,8 @@
 				
 <?php
 
+$todaysDate = date('m/d/Y H:i:s');
+
 // The Query
 query_posts('showposts=5&category_name=event&meta_key=date&meta_compare=>=&meta_value=' . $todaysDate . '&orderby=meta_value&order=ASC');
 
