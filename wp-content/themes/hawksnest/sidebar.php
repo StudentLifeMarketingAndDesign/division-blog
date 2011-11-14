@@ -18,7 +18,7 @@
 $todaysDate = date('m/d/Y H:i:s');
 
 // The Query
-query_posts('showposts=5&category_name=event&meta_key=date&meta_compare=>=&meta_value=' . $todaysDate . '&orderby=meta_value&order=ASC');
+query_posts('showposts=5&category_name=event&meta_key=date%20(mm/dd/yy)&meta_compare=>=&meta_value=' . $todaysDate . '&orderby=meta_value&order=ASC');
 
 // The Loop
 while ( have_posts() ) : the_post();
