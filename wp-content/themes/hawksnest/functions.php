@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support( 'menus' );
+
 // Add Read More link to manual excerpts.
 add_action('the_excerpt', 'child_add_manual_read_more', 20);
 function child_add_manual_read_more($excerpt) {
