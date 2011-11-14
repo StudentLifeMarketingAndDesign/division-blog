@@ -276,7 +276,55 @@ li.twitter-item{
 #featured_post p {
 	font-size: 10px;
 }
+
 h2 a:hover{
 	color: #fff9ab;
 	text-decoration: none;
+}
+h3 a:hover{
+	color: #fff9ab;
+	text-decoration: none;
+}
+#We_Are{
+	background-image: url('images/weare.png');
+	width:419px;
+	height:89px;
+	margin: 0 auto;
+}
+#about_content {
+	width:375px;
+	float: left;
+	margin-top: 15px;
+}
+#about_pics {
+	width:110px;
+	float: right;
+	margin-top: 25px;
+}
+.thumb {
+	margin: 0 auto;
+	width:80px;
+	height:80px;
+	background-color: #ffd41f;
+	padding: 10px;
+	border-radius: 10px;
+}
+.board_name {
+	margin: 0 auto;
+	text-align: center;
+	margin: 3px;
+	font-weight: bold;
+	color: #ffd41f;
+}
+.board_title {
+	margin: 0 auto;
+	text-align: center;
+	color: #ffd41f;
+}
+.board_title a{
+	visibility: hidden;
+}
+.about_group{
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
