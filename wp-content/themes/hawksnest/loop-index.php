@@ -40,7 +40,7 @@ if (is_sticky()) :
 	</a>
 </h2>
 	<div class="entry-content">
-				<?php the_content("Read More ...");?>
+				<?php echo apply_filters('the_content',get_the_content("Read More ...")) ?>
 				
 	</div><!-- .entry-content -->
 	</div><!-- featured_post -->
@@ -54,7 +54,7 @@ if (is_sticky()) :
 	</a>
 </h2>
 	<div class="entry-content">
-				<?php the_content("Read More ...");?>
+				<?php echo apply_filters('the_content',get_the_content("Read More ...")) ?>
 				
 	</div><!-- .entry-content -->
 <?php

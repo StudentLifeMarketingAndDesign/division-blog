@@ -9,7 +9,7 @@ while ( have_posts() ) : the_post();?>
 	</a>
 </h2>
 	<div class="entry-content">
-				<?php the_excerpt();?>
+				<?php echo apply_filters('the_content',get_the_content("Read More ...")) ?>
 				
 	</div><!-- .entry-content -->
 <?php
