@@ -25,13 +25,15 @@ get_header();
 
 			
 	<div id="filmfeature">
+
 	<ul>
 			<?php
 				$dataQuery = new WP_Query( array(
 					'post_type' => 'post',
+					'category_name' => 'now-showing',
 					'posts_per_page' => 5, // get 5 posts
 					 'paged' => get_query_var( 'paged' ), 
-				//	'orderby_field' => 'film_start_date', // name of field
+					/*'orderby_field' => 'film_start_date', // name of field*/
 					'orderby_type' => 'string', // 'int' or 'string' (defaults to 'string')
 					'order'	=>	'ASC'
 				));
@@ -43,7 +45,7 @@ get_header();
 		<li>
 			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 		
-			
+<div class="schedule_container">
 			<?php
 			
 			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
@@ -51,15 +53,11 @@ get_header();
 			  }
 			  
 			  	  echo ec3_get_schedule('<tr><td colspan="3">%s</td></tr>', '<tr><td class="ec3_start">%1$s</td>'
-			  . '<td class="ec3_to">%3$s</td><td class="ec3_end">%2$s</td></tr>','<div class="schedule_container"><table class="ec3_schedule" cellpadding=10>%s</table></div>');
+			  . '<td class="ec3_to">%3$s</td><td class="ec3_end">%2$s</td></tr>','<table class="ec3_schedule" cellpadding=10>%s</table>');
 			
 			
 			?>
-			
-		
-
-
-			
+</div>			
 	<div class="content_container"><p><?php the_content() ?></p></div>
 		
 	<?php endwhile; ?>
