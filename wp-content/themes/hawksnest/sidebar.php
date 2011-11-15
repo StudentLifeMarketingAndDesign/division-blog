@@ -34,6 +34,7 @@ wp_reset_query();
 
 ?>
 				
+				<a href="mailto:hawks-nest@hawkeyesports.com "><div id="joinlist"></div></a>
 				<div id="facebook_label"></div>
 				
 				<div class="fb-like-box" data-href="http://www.facebook.com/iowahawksnest" data-width="292" data-colorscheme="dark" data-show-faces="true" data-border-color="#303030" data-stream="false" data-header="false"></div>

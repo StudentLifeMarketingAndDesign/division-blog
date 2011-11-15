@@ -214,6 +214,17 @@ ul.twitter{
 li.twitter-item{
 	margin-bottom: 10px;
 }
+#joinlist{
+	background-image: url('images/joinlist.png');
+	width:290px;
+	height:60px;
+	margin: 0 auto;
+	margin-top:30px;
+	margin-bottom: 20px;
+}
+#joinlist:hover {
+	background-color:#303030;
+}
 
 /* Footer */
 
