@@ -11,6 +11,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<link href='http://fonts.googleapis.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php
 	/*

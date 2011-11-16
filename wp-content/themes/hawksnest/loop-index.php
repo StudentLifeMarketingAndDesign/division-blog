@@ -46,7 +46,7 @@ if (is_sticky()) :
 	</div><!-- featured_post -->
 	</div><!-- featured -->
 <?php	else: ?>
-
+<div class="post">
 <h2 class="entry-title">
 
 	<a href="<?php the_permalink(); ?>">
@@ -57,6 +57,7 @@ if (is_sticky()) :
 				<?php echo apply_filters('the_content',get_the_content("Read More ...")) ?>
 				
 	</div><!-- .entry-content -->
+	</div><!-- .post -->
 <?php
 endif;
 endwhile;
