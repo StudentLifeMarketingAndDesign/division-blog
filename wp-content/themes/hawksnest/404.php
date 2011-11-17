@@ -8,8 +8,6 @@
  */
 
 get_header(); ?>
-
-		<div class="wrapper">
 			<div class="main">
 
 				<div id="content">
@@ -23,19 +21,11 @@ get_header(); ?>
 					<?php get_search_form(); ?>
 				</div><!-- .entry-content -->
 			</div><!-- #post-0 -->
-
-		
+			
 					</div><!-- #meat -->
-
-         			<div id="sidebar">
 <?php get_sidebar(); ?>
-					</div><!-- #sidebar -->
 				</div><!-- #content -->
-			</div><!-- #wrapper -->
-		</div><!-- #main -->
-	<script type="text/javascript">
-		// focus on search field after it has loaded
-		document.getElementById('s') && document.getElementById('s').focus();
-	</script>
-
+			</div><!-- #main -->
+		<div style="clear:both;"></div>
+		</div><!-- #wrapper -->
 <?php get_footer(); ?>
