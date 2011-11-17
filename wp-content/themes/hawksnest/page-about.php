@@ -27,7 +27,9 @@ while ( have_posts() ) : the_post();?>
 
 					<div id="We_Are"></div>
 					<div id="about_content">
-				<?php the_content('Read more...');?>
+<?php
+					the_content('Read more...');
+?>
 				
 	</div><!-- .entry-content -->
 	<div id="about_pics">
