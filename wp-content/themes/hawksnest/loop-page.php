@@ -2,12 +2,12 @@
 
 // The Loop
 while ( have_posts() ) : the_post();?>
-<h2 class="entry-title">
+<h1 class="entry-title">
 
 	<a href="<?php the_permalink(); ?>">
 	<?php the_title();?>
 	</a>
-</h2>
+</h1>
 	<div class="entry-content">
 				<?php echo apply_filters('the_content',get_the_content()) ?>
 				
