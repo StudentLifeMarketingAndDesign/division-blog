@@ -21,4 +21,10 @@ function child_add_manual_read_more($excerpt) {
     return $excerpt;
 }
 
+foreach (glob("wp-content/themes/hawksnest/shortcodes/*.php") as $filename)
+{
+    include $filename;
+}
+
+
 ?>
