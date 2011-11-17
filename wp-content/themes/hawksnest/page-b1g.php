@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+
+$content_width = "226px";
+
+get_header(); ?>
 			<div class="main">
 
 				<div id="content">
@@ -28,7 +32,21 @@
 	<?php query_posts(array('category_name' => 'b1g-featured', 'posts_per_page' => -1 ));	
 	// The Loop
 	while ( have_posts() ) : the_post();
+	?>
+	<h3>
+	<?php
+		the_title();
+	?>
+	</h3>
+	<?php
 		the_content();
+	?>
+	<div class="excerpt">
+	<?php
+		the_excerpt();
+	?>
+	</div>
+	<?php
 	endwhile;
 	?>
 
