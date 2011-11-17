@@ -8,15 +8,13 @@
  */
 
 get_header(); ?>
-
-		<div class="wrapper">
 			<div class="main">
 
 				<div id="content">
 
 					<div id="meat">
 
-<?php if ( have_posts() ) : ?>
+			<?php if ( have_posts() ) : ?>
 				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyten' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				<?php
 				/* Run the loop for the search to output the results.
@@ -35,13 +33,9 @@ get_header(); ?>
 				</div><!-- #post-0 -->
 <?php endif; ?>
 					</div><!-- #meat -->
-
-         			<div id="sidebar">
 <?php get_sidebar(); ?>
-					</div><!-- #sidebar -->
 				</div><!-- #content -->
-			</div><!-- #wrapper -->
-		</div><!-- #main -->
-
-<?php get_sidebar(); ?>
+			</div><!-- #main -->
+		<div style="clear:both;"></div>
+		</div><!-- #wrapper -->
 <?php get_footer(); ?>
