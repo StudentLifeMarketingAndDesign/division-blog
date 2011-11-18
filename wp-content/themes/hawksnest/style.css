@@ -182,13 +182,13 @@ img {
     -khtml-border-radius: 5px;
 	border-radius: 5px;
 }
-#content li{
-	list-style: inherit;
-}
 #meat {
 	width:520px;
 	padding:20px;
 	float:left;
+}
+#meat li{
+	list-style: inherit;
 }
 
 #birdfeeder_logo {
