@@ -1,7 +1,5 @@
 <?php
 
-$content_width = "226px";
-
 get_header(); ?>
 			<div class="main">
 
@@ -12,9 +10,8 @@ get_header(); ?>
 					<div id="b1glogo"></div>
 <?php
 	query_posts(array('category_name' => 'b1g-featured', 'posts_per_page' => -1 ));
-	if ( have_posts() ):
 ?>
-<div id="b1gpage_meat">
+<div id="b1gpage_meat_long">
 	<a href="2011/08/09/b1g/"><div id="see"></div></a>
 	<a href="#"><div id="where"></div></a>
 	<?php	
@@ -51,20 +48,6 @@ get_header(); ?>
 	?>
 
 </div>
-<?php else: ?>
-<div id="b1gpage_meat_long">
-	<a href="2011/08/09/b1g/"><div id="see"></div></a>
-	<a href="#"><div id="where"></div></a>
-	<?php	
-	wp_reset_query();
-	
-	// The Loop
-	while ( have_posts() ) : the_post();
-		the_content();
-	endwhile;
-	?>
-</div>
-<?php endif; ?>
 					</div><!-- #meat -->
 <?php get_sidebar(); ?>
 				</div><!-- #content -->

@@ -16,7 +16,7 @@ Version: 0
 
 
 body {
-	background-color:#171717;
+	background-color:#000;
 	color:#FFF;
 	background-repeat:repeat;
 	margin:0px;
@@ -96,7 +96,7 @@ img {
 }
 
 .wrapper {
-	padding-top:5px;
+	padding-top:10px;
 	background-image:url('images/stripe.gif');
 	display: block;
 	height:100%;
@@ -181,6 +181,9 @@ img {
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
 	border-radius: 5px;
+}
+#content li{
+	list-style: inherit;
 }
 #meat {
 	width:520px;
@@ -345,8 +348,8 @@ li.twitter-item{
 }
 #uifooterlogo{
 	background-image: url('images/uiowafooter.gif');
-	width:176px;
-	height:25px;
+	width:175px;
+	height:23px;
 	margin-bottom: 10px;
 }
 #hnfooterlogo{
@@ -451,8 +454,8 @@ li.twitter-item{
 
 #b1glogo {
 	background-image: url('images/b1glogo.png');
-	width:416px;
-	height:220px;
+	width:395px;
+	height:209px;
 	margin: 0 auto;
 }
 
@@ -468,6 +471,7 @@ li.twitter-item{
 	width:520px;
 	float: left;
 	margin-top: 10px;
+	text-align: justify;
 }
 
 #b1gpage_meat_long p{
@@ -475,7 +479,7 @@ li.twitter-item{
 }
 
 #b1gpage_new {
-	width:226px;
+	width:520px;
 	float: left;
 	text-align: justify;
 	margin-top: 10px;
@@ -486,6 +490,10 @@ li.twitter-item{
 	text-align: center;
 }
 
+#b1gpage_new h3{
+	margin-left: 20px;
+}
+
 #b1gpage_new .excerpt p{
 	text-align: center;
 	margin-top:0px;
@@ -493,11 +501,12 @@ li.twitter-item{
 
 #see{
 	background-image: url('images/seetheagreement.png');
-	width:274px;
-	height:56px;
+	width:245px;
+	height:50px;
 	float: left;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	margin-right: 11px;
 	border-style: dashed;
 	border-width: 2px;
 	border-color: #303030;
@@ -507,11 +516,12 @@ li.twitter-item{
 }
 #where{
 	background-image: url('images/wheredisplayed.png');
-	width:274px;
-	height:56px;
+	width:245px;
+	height:50px;
 	float: left;
 	margin-top: 10px;
 	margin-bottom: 25px;
+	margin-left: 11px;
 	border-style: dashed;
 	border-width: 2px;
 	border-color: #303030;
