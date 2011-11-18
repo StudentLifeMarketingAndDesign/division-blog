@@ -8,8 +8,11 @@ while ( have_posts() ) : the_post();?>
 	<?php the_title();?>
 	</a>
 </h2>
+	<div class="the_date">
+	<?php the_date();?>
+	</div>
 	<div class="entry-content">
-				<?php echo apply_filters('the_content',get_the_content()) ?>
+				<?php the_content() ?>
 				
 	</div><!-- .entry-content -->
 <?php

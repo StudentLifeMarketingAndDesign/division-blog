@@ -200,6 +200,11 @@ img {
 	margin-top:-15px;
 }
 
+.the_date{
+	font-size: 10px;
+	color: #909090;
+}
+
 .entry-content {
 	text-align: justify;
 }
