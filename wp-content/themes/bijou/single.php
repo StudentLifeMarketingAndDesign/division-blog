@@ -21,14 +21,25 @@ get_header(); ?>
 
 				<div class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
-<?php   echo ec3_get_schedule('<tr><td colspan="3">%s</td></tr>', '<tr><td class="ec3_start">%1$s</td>'
-  . '<td class="ec3_to">%3$s</td><td class="ec3_end">%2$s</td></tr>','<div class="schedule_container"><table class="ec3_schedule" cellpadding=10>%s</table></div>'); ?>
+					
+					<div id="schedule-container">
+						<?php   echo ec3_get_schedule('<tr><td colspan="3">%s</td></tr>', '<tr><td class="ec3_start">%1$s</td>'
+	  . '<td class="ec3_to">%3$s</td><td class="ec3_end">%2$s</td></tr>','<div class="schedule_container"><table class="ec3_schedule" cellpadding=10>%s</table></div>'); ?>
+					
+			<?php
+			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+			  the_post_thumbnail( array(246, 246));
+			  }
+
+				?></div>
+					
 					<div class="entry-meta">
 						<?php bijou_posted_on(); ?>
 					</div><!-- .entry-meta -->
 
 					<div class="entry-content">
-				
+
+
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'bijou' ), 'after' => '</div>' ) ); ?>
 					</div><!-- .entry-content  -->
@@ -70,7 +81,8 @@ get_header(); ?>
 
 				
 
-			
+							<?php comments_template( '', false ); ?>
+
 
 <?php endwhile; // end of the loop. ?>
 

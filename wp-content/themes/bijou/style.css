@@ -83,7 +83,7 @@ p.title {margin:-10px 0 20px 0;}
 div#leftcolumn {width:575px; min-height:200px;float:left; margin:0; padding: 20px; /* background-color: rgba(43, 26, 17, 0.6); */}
 div#filmfeature ul {width:620px;  min-height:100px; margin-top:-10px; list-style:none;}
 div#filmfeature ul li {width:585px; float:left; display: block; margin:0 20px 0 0; }
-div#filmfeature ul li img {float: left; display: block; margin:0 20px 20px 0;}
+div#filmfeature ul li img {/*float: left;*/ display: block; margin:0 20px 20px 0;}
 div#filmfeature ul li h2 a{color:#91b99f; text-transform:uppercase; font-size:30px; margin-bottom:-15px; text-decoration: none;}
 div#filmfeature ul li h3{font-family:'Century Gothic', arial, sans-serif; color:#38755c; text-transform:uppercase; font-size:22px;margin:0;}
 div#filmfeature ul li h4 {margin:0;} 
@@ -106,8 +106,7 @@ table.dbem-calendar-table td.eventless-today {
 
 }
 .schedule_container {
-background-color: #5e7767;
-float: right;
+float: left;
 padding: 5px;
 
 }
@@ -233,4 +232,19 @@ li.ec3_list.ec3_list_day {
 	list-style-type: square;
 	margin: 5px 0;
 
+}
+
+/* Comments Form */
+
+#commentform label {
+	float: none;
+
+}
+#commentform input {
+	display: block;
+
+}
+#commentform textarea {
+	display: block;
+	width: 100%
 }

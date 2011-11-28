@@ -54,12 +54,20 @@
 	 * Without further ado, the loop:
 	 */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
-
 <?php /* How to display posts in the Gallery category. */ ?>
 
 	<?php if ( in_category( _x('gallery', 'gallery category slug', 'bijou') ) ) : ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'bijou' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+
+<?php
+			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+			echo "<h2>IMAGE SHOULD BE HERE</h2>";
+			  the_post_thumbnail( array(246, 246));
+			  }
+
+?>
+
 
 			<div class="entry-meta">
 				<?php bijou_posted_on(); ?>
@@ -134,7 +142,7 @@
 				<?php the_excerpt(); ?>
 			</div><!-- .entry-summary -->
 	<?php else : ?>
-			<?php echo the_meta(); ?>
+			<?php //echo the_meta(); ?>
 			<div class="entry-content">
 				
 				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'bijou' ) ); ?>
