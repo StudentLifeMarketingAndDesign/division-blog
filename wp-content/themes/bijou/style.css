@@ -15,7 +15,7 @@ General comments (optional).
 body {background-image:url(images/wood.jpg);color:white;font-family: 'Century Gothic', Arial, Helvetica, sans-serif; }
 p {font-family:'Century Gothic', Arial, Helvetica, sans-serif; font-size:14px; font-weight:lighter;}
 div#wrapper {width:100%; margin:auto;   }
-.menu { background-color:transparent; margin:auto; }
+.menu-header { background-color:transparent; margin:auto; }
 div#header h1 {background:url(images/nowplaying.png) no-repeat; display:block;height:241px; background-position:50% 50%;  text-indent:-9999px; margin:0px auto 0px auto; }
 div#content {width:949px;  background-color:transparent; margin:auto; /*margin-top:-29px;*/ display:block; height:auto;  background: rgba(43, 26, 17, 0.6) none repeat scroll 0 0; }
 #content.home{
@@ -30,7 +30,7 @@ div.clear {clear:both;}
 a {outline:none; color:#91b99f; text-decoration:none; }
 li {list-style-type:none;}
 div#colophon {margin:0 20px 0 30px; padding-bottom:5px;}
-h2 {font-size:22px; color:#38755c;text-transform:uppercase; margin: 5px 0;}
+h2 {font-size:28px; color:#38755c;text-transform:uppercase; margin: 15px 0;}
 ul.bijou {font-size:13px; list-style-type:none; margin-left:-40px;}
 span.highlight {color:#91b99f; text-transform:uppercase; font-size:13px;}
 
@@ -45,14 +45,14 @@ h2.accessibility {display:none;}
 #topnav {
 	width: 949px; margin: auto;
 }
-.menu ul {margin:auto; width:949px; height:150px; }
-.menu ul li {display:inline; margin:auto;}
+.menu-header ul {margin:auto; width:949px; height:150px; }
+.menu-header ul li {display:inline; margin:auto;}
 
-.menu ul li a {color:white; text-decoration:none; font-size:25px;margin:50px 60px 70px 0px;float:left;text-transform:uppercase;list-style-type:none; }
-.menu ul li .current_page_item a{ color: green }
+.menu-header ul li a {color:white; text-decoration:none; font-size:25px;margin:50px 60px 70px 0px;float:left;text-transform:uppercase;list-style-type:none; }
+.menu-header ul li .current_page_item a{ color: green }
 
 li.current_page_item a, li.page_item a { }
-.menu ul a:hover {color:#91b99f;}
+.menu-header ul a:hover {color:#91b99f;}
 .bijou-logo {margin:0 50px 0 0px;  background:url(images/logo.png) no-repeat; display:block; height:119px; width: 198px; float:left; text-indent:-9999px; }
 .uilogo {margin:0 0px 0 0px;  background:url(images/uilogo2.png) no-repeat; display:block; height:32px; width: 297px;  text-indent:-9999px; }
 
@@ -89,7 +89,7 @@ div#filmfeature ul li h2 a{color:#91b99f; text-transform:uppercase; font-size:30
 div#filmfeature ul li h3{font-family:'Century Gothic', arial, sans-serif; color:#38755c; text-transform:uppercase; font-size:22px;margin:0;}
 div#filmfeature ul li h4 {margin:0;} 
 div#filmfeature ul li h5 {margin:0 0 15px 0; font-family:'Century Gothic', Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal;}
-div#filmfeature ul li p {margin:0; }
+/*div#filmfeature ul li p {margin:0; }*/
  span.director {text-transform:uppercase; color:#91B99F; font-size:15px;}
  
 
@@ -213,8 +213,8 @@ div#connect
 /*END OF RIGHT COLUMN*/
 
 /*IE styles  */
-html>body .menu ul {*width:698px; *height:165px; }
-html>body .menu ul li a{ *margin:50px 60px 70px 0px;  }
+html>body .menu-header ul {*width:698px; *height:165px; }
+html>body .menu-header ul li a{ *margin:50px 60px 70px 0px;  }
 html>body ul#connect {*width:300px; *margin-left:15px; }
 html>body ul#connect li {*float:left; *margin:0 2px 0 2px;}
 html>body ul.bijou {*margin-left:5px;}
