@@ -13,7 +13,7 @@ get_header(); ?>
 			<div id="content" role="main">
 				<div id="leftcolumn">
 				<h1 class="page-title"><?php
-					printf( __( 'Category Archives: %s', 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+					printf( __( 'Category: %s', 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 				?></h1>
 				<?php
 					$category_description = category_description();

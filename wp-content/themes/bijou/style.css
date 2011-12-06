@@ -30,7 +30,7 @@ div.clear {clear:both;}
 a {outline:none; color:#91b99f; text-decoration:none; }
 li {list-style-type:none;}
 div#colophon {margin:0 20px 0 30px; padding-bottom:5px;}
-h2 {font-size:18px; color:#38755c;text-transform:uppercase;}
+h2 {font-size:22px; color:#38755c;text-transform:uppercase; margin: 5px 0;}
 ul.bijou {font-size:13px; list-style-type:none; margin-left:-40px;}
 span.highlight {color:#91b99f; text-transform:uppercase; font-size:13px;}
 
@@ -69,6 +69,7 @@ div#footer p.bottomnav {font-size:15px; margin-top:0;}
 /*ENTRY STYLE*/
 h1.entry-title{color:#91b99f; text-transform:uppercase; font-size:30px; margin-bottom:-5px; text-decoration: none;}
 div.post {margin:0 10px 0 0px;}
+.post img{ float: right; padding: 10px;}
 div.entry-content a img {margin:10px 0 0 0; border:none;}
 
 /*end ENTRY STYLE*/
@@ -111,6 +112,26 @@ padding: 5px;
 
 }
 
+.schedule_container h2 {
+	margin: 5px 0;
+
+}
+
+.schedule_container.archive{
+	float: right;
+
+}
+
+.schedule_container.archive img{
+	padding-left: 5px;
+
+}
+
+table.ec3_schedule td {
+	padding: 3px !important;
+	margin: 0;
+
+}
 
 .content_container {
 	padding: 5px;
@@ -123,7 +144,6 @@ padding: 5px;
 
 .ec3_schedule td {
 	color: white !important;
-	padding: 10px 0;
 
 }
 

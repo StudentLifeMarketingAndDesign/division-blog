@@ -62,7 +62,7 @@
 
 <?php
 			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-			echo "<h2>IMAGE SHOULD BE HERE</h2>";
+			echo "";
 			  the_post_thumbnail( array(246, 246));
 			  }
 
@@ -139,7 +139,23 @@
 
 	<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
 			<div class="entry-summary">
-				<?php the_excerpt(); ?>
+			
+			<div class="schedule_container archive">
+			<?php
+			
+			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+			  the_post_thumbnail( array(246, 246));
+			  }
+			  
+
+			
+			
+			?>
+</div>	
+				<?php the_content() ?>
+				
+				<?php echo ec3_get_schedule('<tr><td colspan="3">%s</td></tr>', '<tr><td class="ec3_start">%1$s</td>'
+			  . '<td class="ec3_to">%3$s</td><td class="ec3_end">%2$s</td></tr>','<table class="ec3_schedule" cellpadding=10>%s</table>'); ?>
 			</div><!-- .entry-summary -->
 	<?php else : ?>
 			<?php //echo the_meta(); ?>
@@ -174,7 +190,7 @@
 		<?php comments_template( '', true ); ?>
 
 	<?php endif; // This was the if statement that broke the loop into three parts based on categories. ?>
-
+<div class="clear"></div>
 <?php endwhile; // End the loop. Whew. ?>
 
 <?php /* Display navigation to next/previous pages when applicable */ ?>

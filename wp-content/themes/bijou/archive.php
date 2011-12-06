@@ -13,11 +13,15 @@
  */
 
 get_header(); ?>
-
 		<div id="container">
 			<div id="content" role="main">
 			<div class="clear"></div>
 			<div id="leftcolumn">
+			<div id ="film-feature">
+			
+			
+			<ul>
+			
 <?php
 	/* Queue the first post, that way we know
 	 * what date we're dealing with (if that is the case).
@@ -25,9 +29,14 @@ get_header(); ?>
 	 * We reset this later so we can run the loop
 	 * properly with a call to rewind_posts().
 	 */
+	 
+	 
+	 
 	if ( have_posts() )
 		the_post();
 ?>
+
+
 
 			<h1 class="page-title">
 <?php if ( is_day() ) : ?>
@@ -54,7 +63,8 @@ get_header(); ?>
 	 */
 	 get_template_part( 'loop', 'archive' );
 ?>
-		
+</ul>
+		</div><!-- end #film-feature -->
 			</div><!-- #content -->
 		</div><!-- #container -->
 		

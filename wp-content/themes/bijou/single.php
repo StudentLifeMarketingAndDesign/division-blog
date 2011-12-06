@@ -22,10 +22,7 @@ get_header(); ?>
 				<div class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 					
-					<div id="schedule-container">
-						<?php   echo ec3_get_schedule('<tr><td colspan="3">%s</td></tr>', '<tr><td class="ec3_start">%1$s</td>'
-	  . '<td class="ec3_to">%3$s</td><td class="ec3_end">%2$s</td></tr>','<div class="schedule_container"><table class="ec3_schedule" cellpadding=10>%s</table></div>'); ?>
-					
+
 			<?php
 			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
 			  the_post_thumbnail( array(246, 246));
@@ -41,9 +38,27 @@ get_header(); ?>
 
 
 						<?php the_content(); ?>
+						
+	<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4dadd88364f642a3"></script>
+<!-- AddThis Button END -->
+<div id="schedule-container">
+						<h2>Showtimes</h2>
+					
+						<?php   echo ec3_get_schedule('<tr><td colspan="3">%s</td></tr>', '<tr><td class="ec3_start">%1$s</td>'
+	  . '<td class="ec3_to">%3$s</td><td class="ec3_end">%2$s</td></tr>','<div class="schedule_container"><table class="ec3_schedule" cellpadding=10>%s</table></div>'); ?>
+					
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'bijou' ), 'after' => '</div>' ) ); ?>
 					</div><!-- .entry-content  -->
-
+<div class="clear"></div>
 <?php if ( get_the_author_meta( 'description' ) ) : // If a user has filled out their description, show a bio on their entries  ?>
 					<div id="entry-author-info">
 						<div id="author-avatar">
@@ -61,17 +76,6 @@ get_header(); ?>
 					</div><!-- #entry-author-info -->
 <?php endif; ?>
 
-	<!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style ">
-<a class="addthis_button_preferred_1"></a>
-<a class="addthis_button_preferred_2"></a>
-<a class="addthis_button_preferred_3"></a>
-<a class="addthis_button_preferred_4"></a>
-<a class="addthis_button_compact"></a>
-<a class="addthis_counter addthis_bubble_style"></a>
-</div>
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4dadd88364f642a3"></script>
-<!-- AddThis Button END -->
 
 					<div class="entry-utility">
 						<?php bijou_posted_in(); ?>
