@@ -166,8 +166,8 @@ div#rightcolumn {width:316px; float:left; margin:0px; margin-bottom:30px; margin
 
 /*begin headshots*/
 div#directors ul {margin-left:-10px; padding:0;}
-div#directors ul li {list-style-type:none;float:left; margin:0 30px 15px 0px; width:120px; height:270px; }
-div#directors ul li img { margin:20px 12px 5px 12px;}
+div#directors ul li {list-style-type:none;float:left; /*margin:0 30px 15px 0px; width:120px;*/ height:270px; }
+div#directors ul li img { /*margin:20px 12px 5px 12px;*/ float: none;}
 div#directors ul li p {margin:0 0 0px 10px; font-size:13px; }
 
 

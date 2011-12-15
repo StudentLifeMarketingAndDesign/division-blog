@@ -91,8 +91,8 @@ print paginate_links( $pagination ) ?>
 
 <?php else : ?>
 
-		<h2 class="center">Not Found</h2>
-		<p class="center">Sorry, but you are looking for something that isn't here.</p>
+		<h2 class="center">No Shows Currently Scheduled</h2>
+		<p class="center">Please check back soon! Happy Studying!</p>
 		<?php get_search_form(); ?>
 
 <?php endif; ?>
