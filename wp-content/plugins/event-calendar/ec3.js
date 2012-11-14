@@ -32,7 +32,7 @@ function ec3()
       var xCat=new RegExp('&cat=[0-9]+$');
       var match=xCat.exec(prev.href);
       if(match)
-        ec3.catClause=match[0];
+        ec3.catClause='';
       // Replace links
       prev.href='javascript:ec3.go_prev()';
       next.href='javascript:ec3.go_next()';

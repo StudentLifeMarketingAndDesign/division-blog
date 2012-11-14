@@ -72,7 +72,7 @@ ec3_get_events(
         <ul id="connect"> 
             
 
-            <li><a href="http://twitter.com/bijoutheater" id="tweet">Twitter</a></li> 
+            <li><a href="http://twitter.com/#!/bijoucinema" id="tweet">Twitter</a></li> 
             <li><a href="http://www.facebook.com/pages/The-Bijou-Cinema/178595398854287" id="fb">Facebook</a></li> 
            <li> <a href="mailto:bijou@uiowa.edu" id="email">Email</a></li> 
            </ul> <!-- closes connect div --> 
@@ -81,5 +81,6 @@ ec3_get_events(
                      <address>The University of Iowa <br /> 
                      166-B Iowa Memorial Union <br /> 
                      Iowa City, IA 52242 </address> 
-                     <p class="bijou">319-335-3258<br /><span class="bijou">bijou@uiowa.edu</span></p> 
+                     <p class="bijou">Tickets and general film info: <br />319.335.3041<br />
+                     For all other inquiries:<br /><span class="bijou">bijou@uiowa.edu</span></p> 
 			 			
