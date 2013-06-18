@@ -11,6 +11,8 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<base href="<?php echo get_bloginfo('url') ?>"><!--[if lte IE 6]></base><![endif]-->
+
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title>
  <?php wp_title(' '); ?>
@@ -89,9 +91,7 @@
   
   </script> 
   
-  <link rel="stylesheet" type="text/css" href="http://studentlife.uiowa.edu/themes/doss/css/styles.css?m=1303157520" /> 
-<link rel="stylesheet" type="text/css" href="http://studentlife.uiowa.edu/themes/doss/css/topbar.css?m=1302806271" /> 
-    
+<link rel="stylesheet" type="text/css" href="wp-content/themes/studentlife/dsl-main-site.css" /> 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -112,43 +112,10 @@
 </head>
 
 <body <?php body_class(); ?>>
+	
 
-<div id="header"> 
-	<div class="container"> 
-		<h1><a href="http://www.uiowa.edu/">The University of Iowa</a> <span><a href="/">Division of Student Life</a></span></h1> 
-		<ul id="univ-nav"> 
-			<li id="univ-nav-imu"><a href="http://imu.uiowa.edu">Iowa Memorial Union</a></li> 
-			<li id="univ-nav-recserv"><a href="http://recserv.uiowa.edu/">Recreational Services</a></li> 
-			<li id="univ-nav-osl"><a href="http://imu.uiowa.edu/students/">Student Involvement/Leadership</a></li> 
-			<li id="univ-nav-all"><a href="/#">All Departments</a> 
-				<div class="sub"> 
-				<h2>Division of Student Life Web Directory</h2> 
-				<div class="subnav-separator">&nbsp;</div> 
-           		<ul> 
-             
-                	<li><a href="http://www.uiowa.edu/ucs/">Counseling Services</a></li> 
-                	<li><a href="http://dos.uiowa.edu">Dean of Students</a></li> 
-                	<li><a href="http://studenthealth.uiowa.edu">Health Iowa</a></li> 
-                	<li><a href="http://imu.uiowa.edu">Iowa Memorial Union</a></li> 
-                	<li><a href="http://imu.uiowa.edu/leadership">Leadership Development</a></li> 
-                	<li><a href="http://imu.uiowa.edu/osl">Center for Student Involvement & Leadershuip</a></li> 
-                	<li><a href="parents/">Parent's Association</a></li> 
-            	</ul> 
-            	
-            	<ul> 
-					<li><a href="http://www.uiowa.edu/admissions/undergrad/majors/pick-one.htm">Pick One Program</a></li> 
-					<li><a href="http://housing.uiowa.edu">University Housing &amp; Dining</a></li> 
-					<li><a href="http://recserv.uiowa.edu">Recreational Services</a></li> 
-					<li><a href="http://studenthealth.uiowa.edu">Student Health Services</a></li> 
-					<li><a href="http://thechallenge.uiowa.edu/">The Iowa Challenge</a></li> 
-                    <li><a hrf="http://www.uiowa.edu/~sds/">Student Disability Services</a></li> 
-            	</ul> 
-			
-			</li> 
-		</ul> 
-		<div class="clearfix"></div> <!-- TODO: remove --> 
-	</div>     
-</div> 
+
+<?php include 'division-bar/templates/DivisionBar.html' ?>
 
 
    

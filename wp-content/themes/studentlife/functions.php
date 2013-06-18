@@ -508,3 +508,13 @@ function twentyten_posted_in() {
 	);
 }
 endif;
+
+
+
+
+function division_bar()  
+{
+    wp_register_style( 'division-bar', get_template_directory_uri() . '/division-bar/css/division-bar.css', array(), '20130603', 'all' );
+    wp_enqueue_style( 'division-bar' );  
+}  
+add_action( 'wp_enqueue_scripts', 'division_bar' );  
